@@ -7,7 +7,10 @@ const numbers = [...document.querySelectorAll('.number')];
 // }
 
 const updateCount = (el) => {
-    console.log(el);
+    // console.log(el);
+    const value = parseInt(el.dataset.value);
+    const increment = Math.ceil(value/1000);
+    let initialValue = 0;
 }
 
 numbers.forEach((number) => {
